@@ -1,13 +1,9 @@
 import React from 'react'
+import { AuthProvider } from './context/AuthContext'
+import { Main } from './Main'
 
-import { Counter } from './examples/Counter'
-
-function App() {
-  return (
-    <div>
-      <Counter />
-    </div>
-  )
-}
-
-export default App
+export const App = () => (
+  <AuthProvider>
+    <Main />
+  </AuthProvider>
+)

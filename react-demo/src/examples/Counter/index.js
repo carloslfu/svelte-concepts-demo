@@ -21,6 +21,7 @@ export const Counter = () => {
   }
 
   return <div className={style.container}>
+    <h3>Counter example</h3>
     Count: {count} <br/>
     Derived value: {count * 2} <br/>
     <br/>
